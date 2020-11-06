@@ -1,1 +1,50 @@
+.comment {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+}
+
+.avatar {
+    height: 38px;
+    width: 38px;
+    background: gray;
+    border-radius: 50%;
+    min-width: 38px;
+}
+
+.content {
+    margin-left: 12px;
+    width: 641px;
+}
+
+.commentTime {
+    font-family: Segoe UI;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 1.63913e-8px;
+    color: #a0a0a0;
+}
+
+.commentText {
+    font-family: Segoe UI;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 1.63913e-8px;
+    color: #333333;
+    margin: 0;
+}
+
+.actionPanel {
+    color: #3072c4;
+    margin-top: 4px;
+}
+
+.commentAction {
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #3072c4;
+    padding: 0;
+}
+
 
