@@ -1,1 +1,85 @@
+.comments {
+    padding: 40px;
+}
+
+.comment {
+    display: flex;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 14px;
+}
+
+.comment--answer {
+    margin-top: 15px;
+}
+
+.comments__item {
+    margin-bottom: 22px;
+}
+
+.comment__wrap-avatar {
+    margin: 0 12px 0 0;
+}
+
+.comment__avatar {
+    width: 38px;
+    height: 38px;
+    background-color: #C4C4C4;
+    border-radius: 50%;
+}
+
+.comment__name {
+    font-weight: bold;
+}
+
+.comment__time {
+    color: #A0A0A0;
+    line-height: 20px;
+}
+
+.comment__text {
+    margin: 0 0 4px;
+    line-height: 20px;
+}
+
+.comment__button {
+    background: none;
+    border: none;
+    color: #3072C4;
+    line-height: 20px;
+    padding: 0 0 0 18px;
+    position: relative;
+    margin-right: 20px;
+}
+
+.comment__button:before {
+    width: 14px;
+    height: 20px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.comment__button--answer:before {
+    content: '';
+    background-image: url(./answer.svg);
+}
+
+.comment__button--anchor:before {
+    content: '';
+    background-image: url(./anchor.svg);
+}
+
+.comment__button--solution:before {
+    content: '';
+    background-image: url(./solution.svg);
+}
+
+@media (max-width: 600px) {
+    .comments {
+        padding: 22px;
+    }
+}
+
 
