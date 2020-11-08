@@ -8,6 +8,10 @@ html {
     margin-bottom: 15px;
 }
 
+.nested {
+    margin-left: 50px;
+}
+
 .commentHeader {
     display: flex;
     align-items: center;
