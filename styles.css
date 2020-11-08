@@ -1,7 +1,21 @@
+html {
+    font-family: Segoe UI, sans-serif;
+}
+
 .comment {
     display: flex;
     flex-direction: row;
     margin-bottom: 15px;
+}
+
+.commentHeader {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    /*display: flex;*/
+    /*flex-direction: row;*/
+    /*justify-content: flex-start;*/
+    /*align-items: baseline;*/
 }
 
 .avatar {
@@ -18,20 +32,25 @@
 }
 
 .commentTime {
-    font-family: Segoe UI;
     font-size: 14px;
     line-height: 20px;
-    letter-spacing: 1.63913e-8px;
     color: #a0a0a0;
 }
 
 .commentText {
-    font-family: Segoe UI;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 20px;
-    letter-spacing: 1.63913e-8px;
     color: #333333;
     margin: 0;
+}
+
+.userName{
+    height: 23px;
+    font-size: 16px;
+    margin: 0 5px 0 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .actionPanel {
@@ -47,4 +66,54 @@
     padding: 0;
 }
 
+.groupTag {
+    border: solid 1px #F69C00;
+    color: #F69C00;
+    margin: 0 5px;
+    border-radius: 3px;
+    padding: 1px 7px;
+}
 
+
+.rightAnswerContainer {
+    display: inline-block;
+    /*width: auto;*/
+    padding: 2px 6px 2px;
+    align-items: center;
+}
+
+.svgRightIcon {
+    /*height: 1em;*/
+    /*width: 1em;*/
+    height: 1.1428571428571428em;
+    width: 1.1428571428571428em;
+    margin-bottom: -0.1428571428571428em;
+    /*height: 100%;*/
+    padding: 3px;
+    color: white;
+    background: #5cb85c;
+}
+
+.rightAnswer {
+    display: none;
+}
+
+.mobileRightAnswer {
+    display: none;
+}
+
+@media (min-width: 401px) {
+    .rightAnswer {
+        display: inline-block;
+        color: white;
+        background: #3F9726;
+        border-radius: 3px;
+        padding: 1px 7px;
+    }
+}
+
+@media (max-width: 400px) {
+    .mobileRightAnswer {
+        display: inline-block;
+    }
+}
