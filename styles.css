@@ -14,20 +14,6 @@ html {
 }
 
 .commentHeader {
-    /* display: flex;
-    align-items: center;
-    width: inherit; */
-
-
-
-
-    /* flex-wrap: wrap; */
-    
-    /* width: inherit; */
-    /*display: flex;*/
-    /*flex-direction: row;*/
-    /*justify-content: flex-start;*/
-    /*align-items: baseline;*/
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
@@ -56,7 +42,6 @@ html {
     /* margin-left: 12px;
     width: 641px; */
 
-
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -65,8 +50,6 @@ html {
     margin-left: 10px;
     overflow: hidden;
     margin-bottom: 10px;
-
-
 
     /* width: inherit;
     display: flex;
@@ -86,7 +69,7 @@ html {
     margin: 0;
 }
 
-.userName{
+.userName {
     height: 23px;
     font-size: 16px;
     margin: 0 5px 0 0;
@@ -102,6 +85,47 @@ html {
 
 .actionMenu {
     margin-left: auto;
+    margin-right: 5px;
+    padding: 3px 4px 1px 4px;
+    
+}
+
+.square {
+    position: relative;
+    top: -3px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 2px 2px 4px rgb(190, 190, 190), 0em -0.1em 0.6em rgb(204, 204, 204);
+
+}
+
+.triangle {
+    position: relative;
+    right: -144px;
+    top: -3px;
+    z-index: 1;
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 8px solid  white;
+}
+.dropDown {
+    display: none;
+    position: absolute;
+    right: 5px;
+    display: none;
+    width: 170px;
+    height: 200px;
+}
+
+.actionMenu:hover {
+    border-radius: 50%;
+    background-color:rgb(204, 204, 204, 50%);
+}
+
+.actionMenu:hover .dropDown {
+    display: block;
 }
 
 .commentAction {
@@ -109,8 +133,23 @@ html {
     background: none;
     border: none;
     color: #3072c4;
-    padding: 0;
+    padding: 10px;
     margin-right: 20px;
+}
+
+.commentActionShort {
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 10px;
+}
+
+.commentActionShort:hover {
+    color: cornsilk;
+    fill:  cornsilk;
+    background-color: #5199DB;
 }
 
 .tagContainer {
@@ -134,7 +173,9 @@ html {
 }
 
 .likeContainer {
-    display: flex; align-items: center;
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
 }
 
 .likeIcon {
@@ -143,7 +184,7 @@ html {
     background: white;
 }
 
-.likeIcon:hover{
+.likeIcon:hover {
     cursor: pointer;
     fill: red;
 }
@@ -168,7 +209,7 @@ html {
     .rightAnswer {
         display: inline-block;
         color: white;
-        background: #3F9726;
+        background: #3f9726;
         border-radius: 3px;
         padding: 1px 7px;
         white-space: nowrap;
@@ -181,8 +222,8 @@ html {
     }
     .groupTag {
         display: inline-block;
-        border: solid 1px #F69C00;
-        color: #F69C00;
+        border: solid 1px #f69c00;
+        color: #f69c00;
         margin: 0 5px;
         border-radius: 3px;
         padding: 1px 7px;
@@ -204,6 +245,6 @@ html {
     .groupIcon {
         display: inline-block;
         fill: white;
-        background: orange;
+        background: #f69c00;
     }
 }
