@@ -9,7 +9,7 @@ html {
     width: 100%;
 }
 
-.nested {
+.nestedComment {
     margin-left: 50px;
 }
 
@@ -32,16 +32,12 @@ html {
 
 .likeCount {
     display: inline-block;
-    /* padding-bottom: 3px; */
-    /* align-self: center; */
     font-size: 16px;
     margin-right: 8px;
+    color: #A0A0A0;
 }
 
 .content {
-    /* margin-left: 12px;
-    width: 641px; */
-
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -50,10 +46,6 @@ html {
     margin-left: 10px;
     overflow: hidden;
     margin-bottom: 10px;
-
-    /* width: inherit;
-    display: flex;
-    flex-direction: column; */
 }
 
 .commentTime {
@@ -164,11 +156,6 @@ html {
     height: 1em;
     width: 1em;
     font-size: 20px;
-    /* height: 1.1428571428571428em;
-    width: 1.1428571428571428em;
-    margin-bottom: -0.1428571428571428em; */
-    /*height: 100%;*/
-    /* box-sizing: border-box; */
     padding: 3px;
 }
 
@@ -180,7 +167,7 @@ html {
 
 .likeIcon {
     display: inline-block;
-    fill: rgb(72, 201, 252);
+    fill: #A0A0A0;
     background: white;
 }
 
