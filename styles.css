@@ -1,1 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+body {
+    background-color: #E5E5E5;
+    min-width: 340px;
+}
 
+time {
+    display: block;
+    margin-top: -5px;
+}
+.mobile{
+    display: none;
+}
+.btn-comment {
+    border: none;
+    margin-right: 18px;
+    color: #3072C4;
+    padding-left: 15px;
+    background: none no-repeat left center;
+}
+.btn-comment img {
+    margin-right: 4px;
+}
+.btn-comment:hover {
+    cursor: pointer;
+}
+
+
+.answer-button {
+    background-image: url("./img/answer.png");
+}
+.anchor-button {
+    background-image: url("./img/anchor.png");
+}
+.view-button {
+    background-image: url("./img/view.png");
+}
+.correctlyAnswer {
+    background-image: url("./img/star.png");
+    background-position: 5px 4px ;
+    background-color: #3F9726;
+    border-radius: 3px;
+    height: 22px;
+    color: #FFFFFF;
+    padding-left: 23px;
+    padding-right: 8px;
+}
+
+.comments {
+    margin-left: 25px;
+    max-width: 740px;
+    font-family: Segoe UI, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+}
+.comments p {
+    margin: 0;
+}
+.listComments{
+    background-color:#FFF ;
+    padding: 40px;
+    padding-right: 10px;
+}
+
+.item-comment {
+    display: flex;
+    list-style: none;
+}
+.text {
+    color: #333333;
+}
+
+.bodyComment {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 22px;
+}
+
+.answerOnComment {
+    padding-left: 50px;
+}
+
+.headerComment {
+    display: flex;
+    justify-content: space-between;
+}
+.leftBlock{
+    display: flex;
+}
+
+.avatar {
+    display: block;
+    width: 50px;
+    height: 50px;
+}
+
+.avatar img {
+    display: block;
+    padding: 1px;
+    width: 38px;
+    height: 38px;
+    background-color: #c4c4c4;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+
+.title {
+    margin-right: 12px;
+}
+
+.title time {
+    color: #A0A0A0;
+}
+
+.name {
+    font-weight: 600;
+    color: #333333;
+}
+
+.like {
+    height: 23px;
+    width: 23px;
+}
+
+.like:hover {
+    cursor: pointer;
+}
+.clicked path, .like:hover path {
+    fill:red
+}
+.sumLike {
+    color: #A0A0A0;
+    margin-right: 5px;
+}
+
+.groups {
+    height: 22px;
+    padding: 1px 7px;
+    color: #F69C00;
+    border: 1px solid #F69C00;
+    box-sizing: border-box;
+    border-radius: 3px;
+    line-height: 16px;
+}
+.footerComment {
+    display: flex;
+}
+
+@media screen and (max-width: 620px) {
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+    .avatar img {
+        border-radius: 10%;
+    }
+    .headerComment {
+        margin-bottom: 15px;
+    }
+    .correctlyAnswer {
+        background-image: url("./img/Check.svg");
+        background-position: 5px 6px ;
+        background-color: #48b329;
+        border-radius: 3px;
+        height: 22px;
+        width: 22px;
+        padding: 0;
+        color: #FFFFFF;
+    }
+    .menu-comment {
+        position: relative;
+        /*z-index: 99;*/
+        width: 32px;
+        height: 32px;
+        margin-right: 10px;
+        border-radius: 50%;
+        background-image: url("./img/menu.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    .menu-comment:hover {
+        cursor: pointer;
+        background-color: #E5E5E5;
+    }
+    .triangle-up {
+        position: absolute;
+        display: none;
+        z-index: 100;
+        width: 0;
+        height: 0;
+        left: 5px;
+        top: 30px;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid #e7e5e5;
+    }
+    .menu {
+        display: none;
+        z-index: 99;
+        list-style: none;
+        background: #e7e5e5;
+        width: 140px;
+        padding: 10px;
+        -webkit-box-shadow: 0 3px 5px 0 rgba(50, 50, 50, 0.75);
+        -moz-box-shadow:    0 3px 5px 0 rgba(50, 50, 50, 0.75);
+        box-shadow:         0 3px 5px 0 rgba(50, 50, 50, 0.75);
+    }
+    .menu li:hover {
+        color:#3072C4;
+        cursor: pointer;
+    }
+    .menu-comment:hover :last-child,
+    .menu-comment:hover :first-child{
+        display: block;
+    }
+    .menu-comment ul {
+        position: absolute;
+        top: 40px;
+        left: -125px;
+    }
+    .groups {
+        background-image: url("./img/social-group.svg");
+        width: 22px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: #F69C00;
+    }
+}
