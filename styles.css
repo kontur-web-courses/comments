@@ -13,6 +13,7 @@
     margin: auto;
     padding-top: 100px;
     padding-bottom: 100px;
+    /*transition: all .3s;*/
 }
 
 .comment {
@@ -189,4 +190,21 @@
 
 .comment__answers > .comment:last-child {
     margin-bottom: 0;
+}
+
+@media screen and (max-width: 850px) {
+    .comments {
+        width: auto;
+    }
+
+    .comment {
+        width: 90%;
+    }
+
+    .comments > .comment {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    /*TODO*/
 }
