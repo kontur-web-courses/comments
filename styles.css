@@ -275,6 +275,7 @@
 .comment__actions {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     margin-top: 5px;
     padding-left: 2px;
 
@@ -291,10 +292,14 @@
 .comment__action {
     display: flex;
     align-items: center;
-    margin-right: 20px;
+    margin-right: 15px;
     cursor: pointer;
     opacity: .5;
     transition: opacity .3s;
+}
+
+.comment__action:last-child {
+    margin-right: 0;
 }
 
 .comment__action:hover {
@@ -302,9 +307,17 @@
 }
 
 .action__icon {
-    width: 10px;
-    height: 10px;
+    width: 14px;
+    height: 14px;
     margin-right: 4px;
+}
+
+.action__icon path:last-child {
+    fill: #3072C4;
+}
+
+.comment__actions > .comment__action:nth-child(2) > .action__icon {
+    transform: rotate(45deg);
 }
 
 .comment__answers {
@@ -349,10 +362,6 @@
         min-width: 35px;
         flex-direction: column;
         align-items: center;
-        /*position: absolute;*/
-        /*left: 0;*/
-        /*top: 53px;*/
-        /*order: -1;*/
     }
 
     .like__icon {
@@ -362,9 +371,6 @@
     .like__counter {
         max-width: 50px;
         word-break: break-all;
-        /*overflow-x: hidden;*/
-        /*white-space: nowrap;*/
-        /*text-overflow: ellipsis;*/
     }
 
     .comment__statuses {
@@ -387,7 +393,6 @@
 
     .status--best {
         min-width: 20px;
-        /*width: 20px;*/
         padding: 0;
         background-position: 50% 50%;
         background-size: 15px 15px;
@@ -395,7 +400,6 @@
 
     .status--group {
         min-width: 20px;
-        /*width: 20px;*/
         padding: 0;
         background: #F69C00 url('img/group.svg') no-repeat 50% 50%;
         background-size: 15px 15px;
@@ -408,15 +412,4 @@
     .comment__action {
         display: none;
     }
-
-    /*.comment {*/
-    /*    width: 90%;*/
-    /*}*/
-
-    /*.comments > .comment {*/
-    /*    margin-right: auto;*/
-    /*    margin-left: auto;*/
-    /*}*/
-
-    /*TODO*/
 }
