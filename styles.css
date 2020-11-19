@@ -19,11 +19,17 @@
 .comment {
     display: flex;
     flex-direction: column;
-    width: 690px;
+    max-width: 100%;
+    /*width: 690px;*/
     margin-bottom: 25px;
 }
 
-.comment__body:hover > .comment__actions {
+.comment__main {
+    display: flex;
+    flex-direction: column;
+}
+
+.comment__main:hover > .comment__body > .comment__actions {
     opacity: 1;
 }
 
@@ -80,6 +86,23 @@
     height: 18px;
     margin-right: 1px;
     cursor: pointer;
+    transition: transform .3s;
+}
+
+.like__icon path {
+    transition: fill .3s;
+}
+
+.comment__like:not(.liked) > .like__icon:hover path {
+    fill: #505050;
+}
+
+.comment__like:not(.liked) > .like__icon:hover {
+    transform: scale(1.15);
+}
+
+.comment__like.liked > .like__icon:hover path {
+    fill: rgba(215, 12, 23, 0.39);
 }
 
 .comment__like.liked > svg path {
@@ -105,7 +128,8 @@
 }
 
 .status--best {
-    background-color: #3F9726;
+    padding-left: 25px;
+    background: #3F9726 url('img/star.svg') no-repeat 6px 50%;
     border-color: #3F9726;
     color: #FFFFFF;
 }
@@ -181,6 +205,9 @@
 
 .comment__answers {
     margin-left: 50px;
+    /*padding-top: 10px;*/
+}
+.comment__answers > .comment:first-child {
     padding-top: 10px;
 }
 
@@ -194,17 +221,37 @@
 
 @media screen and (max-width: 850px) {
     .comments {
-        width: auto;
-    }
-
-    .comment {
         width: 90%;
     }
 
-    .comments > .comment {
-        margin-right: auto;
-        margin-left: auto;
+    .status__text {
+        display: none;
     }
+
+    .status--best {
+        min-width: 20px;
+        width: 20px;
+        padding: 0;
+        background-position: 50% 50%;
+        background-size: 15px 15px;
+    }
+
+    .status--group {
+        min-width: 20px;
+        width: 20px;
+        padding: 0;
+        background: #F69C00 url('img/group.svg') no-repeat 50% 50%;
+        background-size: 15px 15px;
+    }
+
+    /*.comment {*/
+    /*    width: 90%;*/
+    /*}*/
+
+    /*.comments > .comment {*/
+    /*    margin-right: auto;*/
+    /*    margin-left: auto;*/
+    /*}*/
 
     /*TODO*/
 }
