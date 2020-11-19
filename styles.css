@@ -167,6 +167,7 @@
     position: relative;
     margin: 0 0 0 auto;
     background: transparent url('img/more_vert.svg') 50% 50% no-repeat;
+    z-index: 10;
 }
 
 .comment__menu:hover > .menu__block {
@@ -177,11 +178,11 @@
     display: none;
     /*display: flex;*/
     flex-direction: column;
-    width: 200px;
+    width: 250px;
     height: auto;
     position: relative;
     top: 35px;
-    left: -170px;
+    left: -220px;
     padding: 5px 0;
     background-color: #ffffff;
     border: solid 1px #e5e5e5;
@@ -217,13 +218,14 @@
     display: flex;
     align-items: center;
     width: 100%;
-    height: 25px;
+    height: 35px;
     padding: 0 10px;
     transition: color .3s, background-color .3s;
+    cursor: pointer;
 }
 
 .menu__item:nth-child(3) > .item__icon {
-    transform: rotate(-45deg);
+    transform: rotate(45deg);
 }
 
 .menu__item:hover {
@@ -236,8 +238,8 @@
 }
 
 .item__icon {
-    width: 14px;
-    height: 14px;
+    width: 18px;
+    height: 18px;
 }
 
 .item__icon path {
@@ -250,7 +252,7 @@
 
 .item__text {
     margin-left: 5px;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .comment__body {
@@ -397,6 +399,10 @@
         padding: 0;
         background: #F69C00 url('img/group.svg') no-repeat 50% 50%;
         background-size: 15px 15px;
+    }
+
+    .comment__text {
+        font-size: 18px;
     }
 
     .comment__action {
