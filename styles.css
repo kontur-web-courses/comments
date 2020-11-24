@@ -1,1 +1,26 @@
+.comment, 
+.comment-header,
+.comment-footer  {
+    display: flex;
+}
 
+.avatar{
+    border-radius: 50%;
+    background-color: #C4C4C4;
+    width: 40px;
+    height: 40px;
+}
+
+.comment-header i {
+    display: none;
+}
+
+@media screen and (max-width: 400px) {
+    .comment-header i {
+        display: inline-block;
+    }
+
+    .comment-header .group {
+        display: none;
+    }
+}
