@@ -1,1 +1,226 @@
+html {
+    font-family: Segoe UI, sans-serif;
+}
 
+.comment {
+    display: flex;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.nestedComment {
+    margin-left: 50px;
+}
+
+.commentHeader {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: inherit;
+    align-items: center;
+}
+
+.avatar {
+    height: 38px;
+    width: 38px;
+    background: gray;
+    border-radius: 50%;
+    min-width: 38px;
+}
+
+.likeCount {
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 8px;
+    color: #A0A0A0;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: inherit;
+    margin-left: 10px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.commentTime {
+    font-size: 14px;
+    line-height: 20px;
+    color: #a0a0a0;
+}
+
+.commentText {
+    font-size: 16px;
+    line-height: 20px;
+    color: #333333;
+    margin: 0;
+}
+
+.userName {
+    height: 23px;
+    font-size: 16px;
+    margin: 0 5px 0 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.actionPanel {
+    color: #3072c4;
+    margin-top: 4px;
+}
+
+.actionMenu {
+    margin-left: auto;
+    margin-right: 5px;
+    padding: 3px 4px 1px 4px;
+    
+}
+
+.square {
+    position: relative;
+    top: -3px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 2px 2px 4px rgb(190, 190, 190), 0 -0.1em 0.6em rgb(204, 204, 204);
+
+}
+
+.triangle {
+    position: relative;
+    right: -144px;
+    top: -3px;
+    z-index: 1;
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 8px solid  white;
+}
+.dropDown {
+    display: none;
+    position: absolute;
+    right: 5px;
+    width: 170px;
+    height: 200px;
+}
+
+.actionMenu:hover {
+    border-radius: 50%;
+    background-color:rgba(204, 204, 204, 50%);
+}
+
+.actionMenu:hover .dropDown {
+    display: block;
+}
+
+.commentAction {
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #3072c4;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+.commentActionShort {
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 10px;
+}
+
+.commentActionShort:hover {
+    color: cornsilk;
+    fill:  cornsilk;
+    background-color: #5199DB;
+}
+
+.tagContainer {
+    display: flex;
+    flex-direction: row;
+    padding: 2px 6px 2px;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.svgIcon {
+    height: 1em;
+    width: 1em;
+    font-size: 20px;
+    padding: 3px;
+}
+
+.likeContainer {
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+}
+
+.likeIcon {
+    display: inline-block;
+    fill: #A0A0A0;
+    background: white;
+}
+
+.likeIcon:hover {
+    cursor: pointer;
+    fill: red;
+}
+
+.groupIcon,
+.groupTag,
+.rightIcon,
+.rightAnswer {
+    display: none;
+}
+
+@media (min-width: 401px) {
+    .rightAnswer {
+        display: inline-block;
+        color: white;
+        background: #3f9726;
+        border-radius: 3px;
+        padding: 1px 7px;
+        white-space: nowrap;
+    }
+    .actionPanel {
+        display: block;
+    }
+    .actionMenu {
+        display: none;
+    }
+    .groupTag {
+        display: inline-block;
+        border: solid 1px #f69c00;
+        color: #f69c00;
+        margin: 0 5px;
+        border-radius: 3px;
+        padding: 1px 7px;
+    }
+}
+
+@media (max-width: 400px) {
+    .rightIcon {
+        display: inline-block;
+        color: white;
+        background: #5cb85c;
+    }
+    .actionPanel {
+        display: none;
+    }
+    .actionMenu {
+        display: block;
+    }
+    .groupIcon {
+        display: inline-block;
+        fill: white;
+        background: #f69c00;
+    }
+}
