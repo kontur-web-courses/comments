@@ -1,1 +1,64 @@
 
+.container {
+    width: 690px;
+    margin: 0 auto;
+    background-color: lightyellow;
+    padding-top: 40px;
+}
+
+p, span, div {
+    color: #333333;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.comment-avatar {
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    background-color: gray;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+
+.comment-name {
+    font-weight: bold;
+    
+}
+
+.comment-date {
+    color: #A0A0A0;
+
+}
+
+.comment-text {
+    margin: 0 0;
+}
+
+.comment-action {
+    color: #3072C4;
+    text-decoration: none;
+}
+
+.comment-actions {
+    display: none;
+}
+
+
+.comment:hover  .comment-actions {
+    display: block;
+}
+
+.comment-action:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+@media (max-width: 700px) { 
+
+    .container {
+        width: 390px;
+    }
+}
