@@ -1,1 +1,87 @@
+body {
+    font-family: Segoe UI;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 1.63913e-08px;
+}
 
+p, div {
+    margin: 0;
+}
+
+.comment {
+    margin: 20px;
+    max-width: 800px;
+    display: flex;
+    /*flex-wrap: wrap;*/
+    align-items: center;
+    align-content: center;
+}
+
+.comment-reply {
+    margin-left: 20px;
+}
+
+.image {
+    align-self: flex-start;
+}
+.avatar{
+    border-radius: 50%;
+    background-color: #C4C4C4;
+    width: 40px;
+    height: 40px;
+    margin-right: 12px;
+}
+
+.comment-header {
+    margin-top: 5px;
+    line-height: 15px;
+    height: 40px;
+}
+
+.time {
+    color: #A0A0A0;
+}
+
+.name {
+    color: #333333;
+}
+
+.comment-content {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 640.87px;
+}
+
+.comment-footer {
+    margin-top: 5px;
+}
+
+.reply {
+    background: none;
+    border: none;
+    color: #3072C4;
+}
+
+.reply:hover {
+    cursor: pointer;
+}
+
+.more {
+    display: none;
+}
+
+@media screen and (max-width: 400px) {
+    .comment-footer {
+        display: none;
+    }
+    .comment-text {
+        margin-top: 5px;
+    }
+    .more {
+        display: inline;
+        float: right;
+        font-size: 25px;
+        line-height: 5px;
+    }
+}
