@@ -49,6 +49,9 @@
     line-height: 20px;
     color: #3072C4;
 }
+.sub-commentary{
+    margin-left: 40px;
+}
 
 @media (max-width: 800px)
 {
