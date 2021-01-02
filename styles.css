@@ -50,7 +50,9 @@
     color: #3072C4;
 }
 .sub-commentary{
-    margin-left: 40px;
+    position: absolute;
+    left: 45px;
+    margin-top: 90px;
 }
 
 @media (max-width: 800px)
