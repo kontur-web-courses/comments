@@ -1,1 +1,50 @@
+body {
+    font-size: 16px;
+    margin: 0;
+}
 
+.comment {
+    margin: 20px;
+    display: flex;
+}
+
+.comment-content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 650px;
+    margin-left: 10px;
+}
+
+.comment-autor {
+    height: 40px;
+    width: 1000px;
+}
+
+p, div {
+    margin: 0;
+}
+
+.image {
+    align-self: flex-start;
+}
+
+.button {
+    background: none;
+    border: none;
+    color: #3072C4;
+}
+
+@media screen and (max-width: 400px) {
+    .comment-footer {
+        display: none;
+    }
+    .comment-text {
+        margin-top: 5px;
+    }
+    .more {
+        display: inline;
+        float: right;
+        font-size: 25px;
+        line-height: 5px;
+    }
+}
