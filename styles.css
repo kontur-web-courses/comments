@@ -1,1 +1,146 @@
-
+.comment{
+    max-width: 900px;
+    line-height: 20px;
+    font-size: 14px;
+    letter-spacing: 1.63913e-08px;
+    margin: 22px auto auto 40px;
+    color: #333333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.first-comment{
+    margin-top: 40px;
+}
+.answer-comment{
+    margin: 14px auto auto 50.07px;
+}
+.comment-head{
+    display: flex;
+    position: relative;
+}
+.avatar{
+    display:flex;
+    width: 38.05px;
+    height: 38px;    
+    border-radius: 19px;
+    background: #C4C4C4;
+}
+.head-text{
+    display: inline;
+    margin: 1px 0 0 12.02px;
+}
+.name{
+    position: relative;
+}
+.time{
+    margin: -5px 0 0 0;
+    color: #A0A0A0;
+}
+.like{
+    margin-top: 2px;
+    margin-left: 11.01px;
+    width: 16.09px;
+    height: 16px;
+}
+.like-count{
+    color: #A0A0A0;
+    margin-top: 1px;
+    margin-left: 2.94px;
+}
+.hover{
+    display: none;
+}
+.like:hover > .passive{
+    display: none;
+}
+.like:hover > .hover{
+    display: inline-block;
+}
+.group{
+    color: #F69C00;
+    border: #F69C00 solid 1px;
+    text-align: center;
+    width: 81px;
+    height: 22px;
+    margin-top: 1px;
+    margin-left: 11.52px;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+.group-mobi{
+    display: none;
+}
+.right-answer{
+    margin-left: 10.01px;
+    display: flex;
+    background-color: #3F9726;
+    border-radius: 3px;
+    width: 150.2px;
+    height: 22px;
+}
+.right-answer-mobi{
+    display: none;
+}
+.right-answer-png{
+    margin: 1px 0px 1px 3.99px;
+    width: 15px;
+}
+.right-answer-text{
+    color:white;
+    margin: 0px 7.62px 2px auto;
+}
+.comment-body{
+    margin: -1px auto auto 49.07px;
+}
+.comment-actions{
+    margin: 4px auto auto 49px;
+    display: flex;
+}
+.answer{
+    display: flex;
+}
+.edit, .show-answers{
+    margin-left: 20px;
+    display: flex;
+}
+.acction-png{
+    width:14px;
+    height: 20px;
+}
+.acction-text{
+    margin-left: 4px;
+    color: #3072C4;
+}
+@media (max-width: 800px) {
+    .edit, .show-answers{
+        display: none;
+    }
+    .right-answer-png, .right-answer-text, .group{
+        display: none;
+    }
+    .right-answer{
+        border-radius: 3px;
+        width: 22px;
+        height: 22px;
+    }
+    .right-answer-mobi{
+        display: block;
+        margin: 2px;
+        width: 18px;
+        height: 18px;
+    }
+    .group-mobi{
+        background-color: #F69C00;
+        display: block;
+        height: 22px;
+        width: 22px;
+        margin-top: 1px;
+        margin-left: 11.52px;
+        border-radius: 3px;
+        box-sizing: border-box;
+    }
+    .group-mobi-png{
+        margin: 2px;
+        width: 18px;
+        height: 18px;
+    }
+}
