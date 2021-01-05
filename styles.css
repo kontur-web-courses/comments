@@ -1,1 +1,82 @@
 
+.comment{
+    width: 1000px;
+    margin: 40px auto;
+}
+
+.comment .mobile-actions{
+    display: none;
+}
+
+
+ul, li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.name{
+    font-size: 16px;
+    margin: 0 0;
+}
+
+.date{
+    margin: 0;
+    opacity: 0.5;
+}
+
+
+.comment-data{
+    position: relative;
+    margin-left: 60px;
+}
+
+.author-image{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #c4c4c4;
+    border-radius: 100%;
+    top: 0;
+    left: -60px;
+}
+
+.icon-reply{
+    width: 12px;
+    height: 12px;
+    transform: rotate(180deg);
+}
+
+.text{
+    margin-top: 5px;
+}
+
+@media screen and (min-width: 400px) and (max-width: 800px){
+    .comment{
+        width: 300px;
+    }
+
+    .comment .mobile-actions{
+        display: block;
+    }
+    .actions{
+        position: absolute;
+        width: 100px;
+        height: 20px;
+        display: none;
+
+    }
+
+    .mobile-actions{
+        display: block;
+        position: absolute;
+        top: -7px;
+        right: -18px;
+    }
+
+    .comment .mobile-actions:hover .actions{
+        display: block;
+    }
+}
+
+
+
