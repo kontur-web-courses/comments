@@ -1,1 +1,113 @@
+.comment {
+    margin-left: 89.07px;
+    margin-top: 40px;
+}
 
+.other-comment {
+    margin-left: 89.07px;
+    margin-top: 23px;
+}
+.reply-comment{
+    margin-left: 140.14px;
+    margin-top: 23px;
+}
+.reply-avatar {
+    position: absolute;
+    width: 38.05px;
+    height: 38px;
+    left: 96.07px;
+    background: #C4C4C4;
+    border-radius: 60px;
+}
+
+.avatar {
+    position: absolute;
+    width: 38.05px;
+    height: 38px;
+    left: 45px ;
+    background: #C4C4C4;
+    border-radius: 60px;
+}
+
+.font {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 1.63913e-08px;
+}
+
+.name {
+    padding-left: 1px;
+    max-width: 400px;
+    font-weight: bold;
+    display: flex;
+}
+a.like {
+    display: flex;
+    width: 16px;
+    height: 16px;
+    margin: -14px 0 0 11px;
+    background: url(icons/like.png); 
+}
+a.like:hover {
+    background: url(icons/red-like.png); 
+}
+
+a.like-red {
+    display: flex;
+    width: 16px;
+    height: 16px;
+    margin: -14px 0 0 11px;
+    background: url(icons/red-like.png); 
+}
+
+.like-text{
+    margin: 0px 0 0 3px;
+    color: #A0A0A0;
+    font-weight:normal;
+}
+.date {
+    padding-left: 1px;
+    color: #A0A0A0;
+}
+
+.text {
+    padding-top: 1px;
+    max-width: 640.87px;
+    height: auto;
+}
+
+.buttons {
+    padding-top: 4px;
+    display: flex;
+}
+
+.answer{
+    display: flex;
+    cursor: pointer;
+}
+
+.icon {
+    width: 12px;
+    height: 12px;
+    margin-top: 2px;
+}
+
+.bottom-text {
+    margin-left: 4px;
+    color: #3072C4;
+}
+
+.fix, .finder {
+    margin-left: 20px;
+    display: flex;
+    cursor: pointer;
+}
+
+@media (max-width: 400px) {
+    .buttons, .answer, .fix, .finder {
+        display: none;
+    }
+    
+}
+    
