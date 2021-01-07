@@ -1,1 +1,213 @@
+body
+{
+  font-family: Segoe UI;
+  font-size: 14px;
+}
+
+.wrapper
+{
+  padding-left: 40px;
+  padding-top: 40px;
+}
+
+.img
+{
+  width: 38px;
+  height: 38px;
+  background: #C4C4C4;
+  border-radius: 50%;
+  margin-right: 12px;
+  float: left;
+}
+
+.name
+{
+  color: #333333;
+  font-weight:bold;
+  width: 80%;
+}
+
+.comment-text
+{
+  float: left;
+  margin-bottom: 23px;
+  clear: right;
+  max-width: 80%;
+}
+
+.comment
+{
+  clear: both;
+
+}
+
+.date
+{
+  line-height: 20px;
+  color: #A0A0A0;
+  max-width: 70%;
+}
+
+.text
+{
+  line-height: 20px;
+  color: #333333;
+  max-width: 640px;
+  width: auto;
+  clear: both;
+  /* max-width: 70%; */
+}
+
+.send
+{
+  width: 62px;
+  height: 20px;
+  line-height: 20px;
+  color: #3072C4;
+  margin-top:4px;
+  float: left;
+  margin-right: 20px;
+}
+
+.sub-comment
+{
+  margin-left: 50px;
+}
+
+.anchor
+{display: block;
+  width: 62px;
+  margin-right: 20px;}
+
+.solution
+{display: block;
+  width: 150px;}
+
+.menu
+{
+  display: none;
+}
+
+.dots
+{
+  display: none;
+}
+
+@media (max-width: 400px) {
+
+  .text
+  {
+    line-height: 20px;
+    color: #333333;
+    max-width: 70%;
+    margin-right: 20%;
+    z-index: 5;
+  }
+
+  .name
+  {
+    max-width:70%;
+    clear: right;
+    float: left;
+    margin-right: 20px;
+
+  }
+
+  .img
+  {
+    width: 38px;
+    height: 38px;
+    background: #C4C4C4;
+    border-radius: 10%;
+    margin-right: 12px;
+    float: left;
+  }
+
+  .anchor
+  {
+    display: none;
+  }
+
+  .solution
+  {
+    display: none;
+  }
+
+
+  .menu
+  {
+    display: block;
+    color: gray;
+    font-size: 23px;
+    float: right;
+    margin-right: 0%;
+    background: #ffffff;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+  }
+
+  .menu:hover
+  {
+    background: #e4e4e4;
+  }
+
+  .menu {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    margin-left: -120px;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 5px 10px;
+    text-decoration: none;
+    display: block;
+    font-family: Segoe UI;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: left;
+    background-color: white;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #5435ff;
+    color: white;
+  }
+
+  .menu:hover .dropdown-content {
+    display: block;
+  }
+
+
+  .menu:hover .triangle {
+    display: block;
+  }
+
+  .triangle {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid rgb(255, 255, 255);
+    display: none;
+  }
+
+  .box__wrapper {
+    filter: drop-shadow(-1px 6px 3px rgb(131, 131, 131));
+  }
+
+  .sub-comment .comment-text
+{
+  width: 76%;
+}
+
+}
 
