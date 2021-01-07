@@ -1,1 +1,85 @@
+body {
+    margin: 0;
+}
 
+p, span, div {
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 1.63913e-08px;
+    color: #333333;
+}
+
+.comment {
+    position: relative;
+    width: 1000px;
+}
+
+.user-avatar {
+    position: absolute;
+    top: 40px;
+    left: 45px;
+    width: 38.05px;
+    height: 38px;
+    background-color: #C4C4C4;
+    border-radius: 100%;
+}
+
+.user-name {
+    margin-left: 90.07px;
+    padding-top: 25px;
+    padding-left: 1px;
+    width: 228.31px;
+    height: 20px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.comment-date {
+    margin-left: 91px;
+    padding-top: 15px;
+    width: 98.13px;
+    height: 20px;
+    color: #a0a0a0;
+}
+
+.comment-date span {
+    color: #a0a0a0;
+}
+
+.comment-text{
+    margin-left: 90.07px;
+    margin-top: 5px;
+    width: 640.87px;
+    height: 60px;
+}
+
+.reply {
+    width: 62px;
+    height: 20px;
+    margin-left: 90.07px;
+    margin-top: -10px;   
+}
+
+.reply a {
+   text-decoration: none; 
+}
+
+.reply-comment {
+    position: relative;
+    margin-left: 45px;
+    margin-top: -70px;
+    margin-bottom: -50px;
+}
+
+@media (max-width: 400px) {
+    .reply a{
+        display: none;
+    }
+
+    .comment {
+        width: 300px;
+    }
+}
