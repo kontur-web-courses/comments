@@ -1,11 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"/>
     <title>Комментарии</title>
-    <link rel="stylesheet" href="styles.css">
+    <link href="styles.css" rel="stylesheet"/>
+    <link href="static/" rel="static"/>
 </head>
 <body>
+<div class="container">
+    <table class="comment">
+        <tr>
+            <td>
+                <div class="avatar"></div>
+            </td>
+            <td>
+                <span class="name">Константин Константинопольский</span>
+                <br/>
+                <span class="date">57 минут назад</span>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <p class="text">
+                    Как по мне зачем новичку забивать голову раньше времени
+                    улучшениями из версии 6, если еще нет базы. Тут нужен хотя бы
+                    средний уровень, а то и выше, владения языком чтобы понять что там
+                    написано. Для новичка это лишняя информация которая ему сейчас не
+                    к чему.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <div class="actions">
+                    <div class="action reply">
+                        <img src="action-reply.svg" alt="reply to comment">
+                        Ответить
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <div class="subcomments">
+                    <table class="comment">
+                        <tr>
+                            <td>
+                                <div class="avatar"></div>
+                            </td>
+                            <td>
+                                <span class="name">Андрей Астафьев</span>
+                                <br/>
+                                <span class="date">только что</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <p class="text">Не соглашусь с тобой, важно на самом старте максимально
+                                    быстро развиваться во всех направлениях.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <div class="actions">
+                                    <div class="action action-reply">
+                                        <img src="action-reply.svg" alt="reply to comment">
+                                        Ответить
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <table class="comment">
+        <tr>
+            <td>
+                <div class="avatar"></div>
+            </td>
+            <td>
+                <span class="name">Иван Антонов</span>
+                <br/>
+                <span class="date">21 Ноября</span>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <p class="text">
+                    Почему int не может быть умножен на double, если этот тип может
+                    быть неявно преобразован?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <div class="actions">
+                    <div class="action action-reply">
+                        <img src="action-reply.svg" alt="reply to comment">
+                        Ответить
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <table class="comment">
+        <tr>
+            <td>
+                <div class="avatar"></div>
+            </td>
+            <td>
+                <span class="name">Антон</span>
+                <br/>
+                <span class="date">10 Октября</span>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <p class="text">
+                    Че-то я лекцию три раза посмотрел, но все равно ничего не понял.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <div class="actions">
+                    <div class="action action-reply">
+                        <img src="action-reply.svg" alt="reply to comment">
+                        Ответить
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <div class="subcomments">
+                    <table class="comment">
+                        <tr>
+                            <td>
+                                <div class="avatar"></div>
+                            </td>
+                            <td>
+                                <span class="name">Леха</span>
+                                <br/>
+                                <span class="date">15 Октября</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <p class="text">Хочу пожелать тебе удачи на остальных лекциях,
+                                    она не будет лишней....</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <div class="actions">
+                                    <div class="action action-reply">
+                                        <img src="action-reply.svg">
+                                        Ответить
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
 
+                        <tr>
+                            <td></td>
+                            <td>
+                                <div class="subcomments">
+                                    <table class="comment">
+                                        <tr>
+                                            <td>
+                                                <div class="avatar"></div>
+                                            </td>
+                                            <td>
+                                                <span class="name">Антон</span>
+                                                <br/>
+                                                <span class="date">15 октября</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td>
+                                                <p class="text">Спасибо конечно, но лучше бы помог разобраться :(</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td>
+                                                <div class="actions">
+                                                    <div class="action reply">
+                                                        <img src="action-reply.svg" alt="reply to comment">
+                                                        Ответить
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </td>
+                        </tr>
+
+                    </table>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
 </body>
 </html>
