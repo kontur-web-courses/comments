@@ -16,6 +16,15 @@ p, span, div {
     margin: 0 auto;
 }
 
+.comment {
+    margin-bottom: 22px;
+}
+
+.comment .author-info {
+    display: flex;
+    align-items: center;
+}
+
 .comment .avatar {
     width: 38px;
     height: 38px;
@@ -27,28 +36,36 @@ p, span, div {
 
 .comment .name {
     font-weight: bold;
-
-}
-
-.comment .text {
-    margin: 0 0;
+    margin: 0;
 }
 
 .comment .date {
     color: #A0A0A0;
+    margin: 0;
 }
 
-.comment .action {
+.comment .text {
+    margin: 1px 0 0 49px;
+}
+
+.comment .action .icon {
+    color: #3072C4;
+    margin-right: 4px;
+}
+
+.comment .action .description {
     color: #3072C4;
     text-decoration: none;
 }
 
-.comment .action:hover {
+.comment .action:hover .description {
     text-decoration: underline;
     cursor: pointer;
 }
 
 .comment .actions {
+    margin-top: 4px;
+    margin-left: 50px;
     max-height: 0;
     visibility: collapse;
     transition: max-height;
@@ -56,8 +73,13 @@ p, span, div {
 }
 
 .comment:hover .actions {
-    max-height: 100px;
+    max-height: 20px;
     visibility: visible;
+}
+
+.comment .replies {
+    margin-top: 14px;
+    margin-left: 49px;
 }
 
 @media (max-width: 700px) {
